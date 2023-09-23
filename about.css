@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: rgb(255, 248, 248);
+}
+
+.wrapper h1{
+    font-size: 45px;
+    text-align: center;
+    color: #6C9EBA;
+    margin: 20px 0px;
+}
+
+.wrapper h3{
+    font-size: 20px;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.grid{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 98px;
+    align-items: center;
+    grid-gap: 144px;
+}
+
+img{
+    object-fit: cover;
+}
+
+.grid > article{
+    box-shadow: 5px 5px 5px 0px gray;
+    text-align: center;
+    background: transparent;
+    border-radius: 20px;
+}
+
+.grid > article img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.konten{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.grid > article:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width:1000px){
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
